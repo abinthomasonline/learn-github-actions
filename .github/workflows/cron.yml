@@ -2,7 +2,7 @@ name: Get Cat Fact
 run-name: Meow! 
 on:
   schedule:
-    - cron: "7 17 17 12 *"
+    - cron: "15 17 17 12 *"
 jobs:
   Get-Cat-Fact:
     runs-on: ubuntu-latest
