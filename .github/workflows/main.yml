@@ -6,4 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python main.py
+      - run: |
+          python main.py
+          git config user.name main-gh-action
+          git config user.email main-github-action@github.com
+          git add data/*.json
+          git commit -m "Add cat fact"
+          git push
